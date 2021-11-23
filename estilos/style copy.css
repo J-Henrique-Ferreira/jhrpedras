@@ -48,30 +48,24 @@ header {
 }
 
 header h1  {
-   display: inline-block;
-   font-size:  3em;
+   font-size:  clamp(3.3em, 3vw, 5em);
    font-family: var(--fonteh1);
    font-style: italic;
    text-align: left;
    color: var(--color2);
-   padding: .4em 0em 0em 1.1em;
-  text-shadow:  1px 1px 8px rgb(0 0 0 / 44%);
+   padding: 4% 1% 0.5% 7%;
+   text-shadow:  1px 1px 8px rgb(0 0 0 / 44%);
 }
 
 
-header p {
-   display: block;
+header > p {
    color: var(--color2);
-   font-size: 1.8em;
+   font-size: clamp(1.6em, 3vw, 2em);
    font-family: var(--fonte3);
    text-align: left;
-   padding: .4em 0em .2em 1.8em;
-   letter-spacing: .012em;
-  
+   padding: 1px 0px 15px 7%;
+}
 
-}
-nav {
-}
 
 nav ul {
    float: right;
