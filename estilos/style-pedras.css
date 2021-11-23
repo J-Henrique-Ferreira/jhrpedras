@@ -250,6 +250,12 @@ aside {
    padding: 0 5px;
    font-family: var(--fonte4);
 }
+
+.as-d2 a:hover {
+   box-shadow: 2px 2px 3px  rgb(0 0 0 / 20%);
+   background:var(--color3) ;
+
+}
 .sect-5 {
    display: inline-block;
    width: 100%;
