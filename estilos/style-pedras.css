@@ -239,23 +239,16 @@ aside {
 .as-d2 {
    display: inline-block;
    font-size: clamp(2em, 4vw, 3em);
-   padding: 1px 1% 1px 1%;
    margin: 1% 1%;
-   border-radius: 10px;
-   background-color: var(--color0);
 }
 
 .as-d2 a {
    text-decoration: none;
+   background-color:var(--color0);
    color: var(--color2);
+   border-radius: 10px;
+   padding: 0 5px;
    font-family: var(--fonte4);
-
-}
-
-.as-d2:hover {
-   box-shadow: 2px 2px 3px  rgb(0 0 0 / 20%);
-   background-color:var(--color3) ;
-
 }
 .sect-5 {
    display: inline-block;
