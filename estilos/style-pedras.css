@@ -65,6 +65,87 @@ header > p {
    padding: 1px 0px 15px 7%;
 }
 
+
+nav {
+}
+
+nav ul {
+   float: right;
+   margin-right: 20px;
+}
+
+nav ul li {
+   display: inline-block;
+   line-height: 5.5em;
+}
+
+nav ul li a {
+   color: var(--color2);
+   font-size: 1.2em;
+   font-family: var(--fontep);
+   padding: 4px 8px;
+   border-radius: .25em;
+   text-transform: uppercase;
+}
+
+a.active, a:hover {
+   background: var(--color0);
+   transition: .4s;
+}
+
+.checkbtn {
+   font-size: 2.2em;
+   color: var(--color2);
+   float: right;
+   line-height: 80px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+}
+#check {
+   display: none;
+}
+ @media (max-width: 952px) {
+    label h1 {
+       font-size: 30px;
+       padding-left: 50px;
+    }
+      nav ul li a {
+         font-size: 1em;
+         color: var(--color2);
+      }
+ }
+ @media (max-width: 900px) {
+      .checkbtn {
+         display: block;
+      }
+      ul {
+         position: fixed;
+         width: 100%;
+         height: 100vh;
+         background-color: var(--color3);
+         top: 80px;
+         left: -100%;
+         text-align: center;
+         transition: .5s;
+      }
+      nav ul li {
+         display: block;
+         margin: 4%;
+         line-height: 30px;
+      }
+      nav ul li a {
+         font-size: 1.3em;
+      }
+      a.active, a:hover {
+         background-color: var(--color0);
+         
+      }
+      #check:checked ~ ul {
+         left: 0;
+      }
+   }
+/*
 nav {
    background-color: var(--color4);
    padding: 0.4% 7%;
@@ -89,6 +170,7 @@ nav > a:hover {
     box-shadow: 2px 1px 3px  rgb(0 0 0 / 50%);
     background-color: var(--color0);
 }
+*/
 main {
     background-color: white;
     width: 95%;
