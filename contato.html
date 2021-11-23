@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/style copy.css">
+    <title>JHR Pedras</title>
+</head>
+<body>
+    <header>
+            <h1><spam>JHR</spam> Pedras</h1>
+            <p>Pedras Grês Direto da Pedreira</p>
+    </header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="./pedragres.html">Pedras Grês</a>
+        <a href="./lajegres.html">Tijoletas Grêss</a>
+        <a href="./tijoletagres.html"> Lages Grês</a>
+        <a href="#">Contato</a>
+    </nav>
+    <main>
+    <form method="post" id="fContato" action="mailto:joaof6418@gmail.com">
+        <fieldset id="usuario"><legend><b>Dados para contato</b></legend>
+            <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="50" maxlength="60" placeholder="Nome Completo"></p>
+          
+            <p><label for="cTelefone">Telefone</label>: <input type="tel" name="tTelefone" id="cTelefone" size="15" maxlength="15" placeholder="ddd numero"></p>
+     
+            <p><label for="cMail">E-mail:</label><input type="email" name="tMail" id="cMail" size="50" maxlength="80" placeholder="Digite seu endereço de e-mail"></p>
+        </fieldset>
+
+        <fieldset id="endereco"><legend><b>Endereço para entrega</b></legend>
+            <p><label for="cLogradouro">Logradouro:</label> <input type="text" name="tLogradouro" id="cLogradouro" size="60" maxlength="80" placeholder="Rua, Avenida, Travessa..."></p>
+            <br> 
+            <p><label for="cNumero">Numero:</label> <input type="number" name="tNumero" id="cNumero" min="0" max="99999" placeholder="Numero"></p>
+            <br>
+           
+                <p><label for="">Estado:</label></p>
+                <select name="tEst" id="cEst">
+                <option value="RS" selected>Rio Grande Do Sul</option>
+                <option value="SC">Santa Catarina</option>
+            </select>
+            <p><label for="cCid">Cidade:</label> <input type="text" name="tCid" id="cCid" maxlength="40" size="40" placeholder="Sua Cidade" list="cidades"></p>
+            <datalist id="cidades">
+                <option value="Taquara"></option>
+                <option value="Porto Alegre"></option>
+
+            </datalist>
+        </fieldset>
+
+        <fieldset id="medida"><legend><b>Produto Desejado</b></legend>
+             <input type="radio" name="tProduto" id="cPedra"><label for="cPedra">Pedra</label>
+             <br>
+             <input type="radio" name="tProduto" id="cTijoleta"><label for="cTijoleta">Tijoleta </label>
+             <br>
+             <input type="radio" name="tProduto" id="cLaje"><label for="cLaje">Laje</label>
+        </fieldset>
+
+    </form>
+        <footer>
+       <section class="sect-5">
+                   <div class="fons">
+                       <h2>Fones</h2>
+                       <p>(51) 99930-3433</p>
+                       <p>(51) 99877-7059</p>
+                   </div>
+                   <div class="fons">
+                       <ul>
+                              <li>
+                                  <a href="./index.html"> voltar</a>
+                              </li>
+                              <li>
+                                  <a href="./pedragres.html">Pedras Grês</a>
+                              </li>
+                              <li>
+                                  <a href="./lajegres.html"> Lages Grês</a>
+                              </li>
+                              <li>
+                                  <a href="./tijoletagres.html">Tijoletas Grês</a>
+                              </li>
+                          
+                       </ul>
+                   </div>
+                <div class="pagamento">
+                    <img src="../img/pagamento-pq.jpeg" alt="">
+                </div>
+            </p>
+       </section>
+        </footer>
+    </main>
+</body>
+</html>
