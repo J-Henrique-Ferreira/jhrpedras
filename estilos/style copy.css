@@ -178,7 +178,8 @@ background-color: var(--color0);
 
 main {
    background-color: white;
-   width: 83%;
+   max-width: 880px;
+   min-width: 500px;
    margin: auto;
    box-shadow: 2px 2px 17px 1px rgb(0 0 0 / 18%);
    text-shadow:2px 2px 4px rgb(0 0 0 / 24%);
