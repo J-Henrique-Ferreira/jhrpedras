@@ -135,7 +135,7 @@ nav a:hover {
       .nav-ul li a {
          font-size: 1.3em;
       }
-      a:hover {
+      nav a:hover {
          background-color: var(--color0);
          
       }
@@ -408,9 +408,7 @@ aside {
 .as-d2 a:hover {
    box-shadow: 2px 2px 3px  rgb(0 0 0 / 20%);
    background:var(--color3) ;
-
 }
-
 footer {
    width: 100%;
    min-height: 250px;
@@ -462,8 +460,9 @@ footer .boxs:nth-child(4) {
       flex-direction: column;
   }
   footer .boxs {
-     width: 100%;
+     width: 90%;
      text-align: center;
+     margin: auto;
   } 
   footer .boxs:nth-child(4) {
    width: 90%;
