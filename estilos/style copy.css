@@ -454,6 +454,7 @@ footer .boxs:nth-child(4) {
    align-items: center;
    background: #333;
    padding: 0px;
+   text-align: center;
 }
 
 .footer .sociais {
@@ -468,12 +469,21 @@ footer .boxs:nth-child(4) {
    line-height: 40px;
    background: #ddd;
    border-radius: 10px;
-
+   cursor: pointer;
+   transition: color .3s linear;
 }
 
 .sociais .social a {
    color: #000;
-   
+   font-size: 1.5em;
+}
+
+.sociais .social:hover {
+   background: #444;
+}
+
+.sociais .social:hover a {
+   color: #fff;
 }
 
 
