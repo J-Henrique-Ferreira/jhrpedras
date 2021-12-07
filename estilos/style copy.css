@@ -432,6 +432,7 @@ footer .boxs:nth-child(4) {
 .boxs ul li {
    margin: 10px 0px;
    list-style: none;
+   font-size: 1.1em;
 }
 
 .boxs ul li a {
@@ -445,6 +446,7 @@ footer .boxs:nth-child(4) {
 .boxs p {
    color: #fff;
    text-align: justify;
+   font-size: 1.1em;
 }
 
 .footer {
