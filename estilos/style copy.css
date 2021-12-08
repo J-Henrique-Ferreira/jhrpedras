@@ -206,6 +206,7 @@ main {
 .s1-boxs1 {
    display: block;
    width: 200px;
+   height: 100%;
    margin: 10px;
    background: #aaa;
    border-radius: 5px
@@ -229,7 +230,9 @@ main {
    width: 100%;
    height: 90px;
    margin-top: 25px;
-   font-size: 16px;
+   font-size: 1.05em;
+   font-family: var(--fontep);
+
 }
 
 
@@ -241,7 +244,7 @@ main {
 
 
 
-@media (max-width : 720px) {
+@media (max-width : 840px) {
    .sec-1 {
       display: inline-table;
       width: 100%;
@@ -253,6 +256,7 @@ main {
 .s1-boxs1 {
    display: inline-table;
    width: 200px;
+   height: ;
    margin: 10px;
    background: #aaa;
    border-radius: 5px
@@ -277,6 +281,48 @@ main {
    height: 90px;
    margin-top: 25px;
    font-size: 16px;
+   font-family: var(--fontep);
+}
+}
+
+@media (max-width : 400px) {
+   .sec-1 {
+      display: inline-table;
+      width: 100%;
+      height: 250px;
+      margin: auto;
+      align-items: center;
+      text-align: center;
+  }
+.s1-boxs1 {
+   display: inline-table;
+   width: 100%;
+   height: auto;
+   margin: 5px;
+   background: #aaa;
+   border-radius: 5px
+}
+
+.s1-boxs2 {
+   width: auto;
+   margin: 20px;
+   align-items: center;
+   text-align: cente;
+}
+.s1-boxs2 i {
+   width: 100%;
+   align-items: center;
+   text-align: center;
+   font-size: 80px;
+}
+
+.s1-boxs1 p {
+   text-align: center;
+   width: 100%;
+   height: 90px;
+   margin-top: 25px;
+   font-size: 16px;
+   font-family: var(--fontep);
 }
 }
 
