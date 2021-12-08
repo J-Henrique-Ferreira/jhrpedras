@@ -194,78 +194,92 @@ main {
    padding-top: 2%;
 }
 
+
 .sec-1 {
-text-align: center;
-padding-top: 2%;
-width: 100%;
-padding-bottom: 4%;
+   display: flex;
+   width: 82%;
+   height: 250px;
+   margin: auto;
+   align-items: center;
 }
 
-.diferencial1  {
-   background-color: var(--color1);
-   display: inline-block;
-   font-family: var(--fontep);
-   width: 25%;
-   padding: 2% 3% 4% 3%;
-   margin-bottom: 0.5%;
-   border-radius: 0.5em;
+.s1-boxs1 {
+   display: block;
+   width: 200px;
+   margin: 10px;
+   background: #aaa;
+   border-radius: 5px
 }
-.diferencial2  {
-   background-color: var(--color);
-   display: inline-block;
-   font-family: var(--fontep);
-   font-size: clamp(1em, 2vw, 1.5em);
-   width: 25%;
-   padding: 2% 3% 4% 3%;
-   margin-bottom: 0.5%;
-   border-radius: 0.5em;
-}
-.diferencial2 p {
-   width: 100%;
-}
-.diferencial2 img {
-   padding-bottom: 6%;
-   width: 55%;
-}
-.diferencial3 {
-   background-color: var(--color);
-   display: inline-block;
-   font-family: var(--fontep);
-   font-size: clamp(1em, 2vw, 1.5em);
 
-   width: 25%;
-   padding: 2% 3% 4% 3%;
-   margin-bottom: 0.5%;
-   border-radius: 0.5em;
+.s1-boxs2 {
+   width: auto;
+   margin: 20px;
+   align-items: center;
+   text-align: cente;
 }
-.diferencial3 p {
+.s1-boxs2 i {
    width: 100%;
+   align-items: center;
+   text-align: center;
+   font-size: 80px;
 }
-.diferencial3 img {
-   width: 50%;
-   padding-bottom: 10%;
-}
-.diferencial4 {
-   background-color: var(--color);
-   display: inline-block;
-   font-family: var(--fontep);
-   font-size: clamp(1em, 2vw, 1.5em);
-   width: 25%;
-   padding: 2% 1% 4% 3%;
-   margin-bottom: 0.5%;
-   border-radius: 0.5em;
-}
-.diferencial4 p {
+
+.s1-boxs1 p {
+   text-align: center;
    width: 100%;
+   height: 90px;
+   margin-top: 25px;
+   font-size: 16px;
 }
-.diferencial4 img {
-   width: 50%;
-   padding-bottom: 10%;
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 720px) {
+   .sec-1 {
+      display: inline-table;
+      width: 100%;
+      height: 250px;
+      margin: auto;
+      align-items: center;
+      text-align: center;
+  }
+.s1-boxs1 {
+   display: inline-table;
+   width: 200px;
+   margin: 10px;
+   background: #aaa;
+   border-radius: 5px
 }
-.diferencial p {
-   font-size: clamp(em, 3vw, 4em);
-   padding: 0px;
+
+.s1-boxs2 {
+   width: auto;
+   margin: 20px;
+   align-items: center;
+   text-align: cente;
 }
+.s1-boxs2 i {
+   width: 100%;
+   align-items: center;
+   text-align: center;
+   font-size: 80px;
+}
+
+.s1-boxs1 p {
+   text-align: center;
+   width: 100%;
+   height: 90px;
+   margin-top: 25px;
+   font-size: 16px;
+}
+}
+
 .m-art1 {
    text-align: center;
    width: 99%;
