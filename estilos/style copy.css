@@ -38,7 +38,7 @@ img {
    width: 100%;
 }
 body {
-   background-color: var(--color6);   
+   background-color: var(--color);   
   
 }
 
@@ -99,6 +99,7 @@ nav a:hover {
    cursor: pointer;
    display: none;
 }
+
 #check {
    display: none;
 }
@@ -115,6 +116,13 @@ nav a:hover {
  @media (max-width: 900px) {
       .checkbtn {
          display: block;
+         margin: 25px 48px;
+         
+      }   
+      .fa-bars {
+         position: fixed;
+         float: right;
+      
       }
       .nav-ul {
          position: fixed;
@@ -178,7 +186,7 @@ background-color: var(--color0);
 main {
    background-color: white;
    min-width: none;
-   max-width: 99%;
+   max-width: 800px;
    margin: auto;
    box-shadow: 2px 2px 17px 1px rgb(0 0 0 / 18%);
    text-shadow:2px 2px 4px rgb(0 0 0 / 24%);
@@ -298,7 +306,7 @@ main {
       margin-right: auto;
       align-items: center;
       text-align: center;
-      background-color: #aaa;
+      background-color: ;
   }
 .s1-boxs1 {
    display: inline-table;
@@ -452,13 +460,16 @@ aside {
 .as-d1 {
    display: block;
    font-style: var(--fonte3);
-   padding: 1px 1% 1px 1%;
+   font-family: var(--fonte4);
    font-size: clamp(1.5em, 3vw, 2em); 
    text-align: center;
+   padding: 1px 1% 1px 1%;
+
 }
 .as-d2 {
    display: block;
    font-size: clamp(2em, 4vw, 3em);
+   font-family: var(--fonte);
    margin: 1% 1%;
    text-align: center;
 }
@@ -494,12 +505,24 @@ footer .boxs:nth-child(4) {
 .boxs h2 {
    color: white; 
    margin-bottom: 20px;  
+   font-family: var(--fonteh1);
+   font-size: 1.6em;
+   font-weight: lighter;
+}
+
+.boxs h3 {
+   color: white; 
+   margin-bottom: ;  
+   font-family: var(--fonteh1);
+   font-size: 1em;
+   font-weight: lighter;
 }
 
 .boxs ul li {
    margin: 10px 0px;
    list-style: none;
    font-size: 1.1em;
+   font-family: var(--fonte4);
 }
 
 .boxs ul li a {
@@ -511,9 +534,11 @@ footer .boxs:nth-child(4) {
    color: #fff;
 }
 .boxs p {
-   color: #fff;
+   color: #ddd;  
    text-align: justify;
    font-size: 1.1em;
+   font-family: var(--fonte4);
+   text-align: center;
 }
 
 .footer {
