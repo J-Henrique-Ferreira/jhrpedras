@@ -40,7 +40,7 @@ body {
 }
 
 header {
-  background: var(--color3);
+  background: var(--color1);
 }
 
 header h1  {
@@ -48,7 +48,7 @@ header h1  {
    font-family: var(--fonte3);
    font-style: italic;
    text-align: left;
-   color: var(--color4);
+   color: #ccc;
    padding: 0% 1% 0.5% 7%;
    text-shadow:  0px 1px 2px rgb(0 0 0 / 44%);
 }
@@ -75,7 +75,7 @@ nav ul li {
 }
 
 nav ul li a {
-   color: var(--color4);
+   color: #ccc;
    font-size: 1em;
    font-family: var(--fontep);
    padding: 4px 8px;
@@ -90,7 +90,7 @@ nav a:hover {
 
 .checkbtn {
    font-size: 1.8em;
-   color: var(--color2);
+   color: #bbb;
    float: right;
    line-height: 80px;
    margin-right: 40px;
