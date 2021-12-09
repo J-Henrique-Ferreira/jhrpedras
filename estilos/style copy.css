@@ -270,7 +270,7 @@ main {
    width: 200px;
    height: ;
    margin: 10px;
-   background-color: #fff;
+   background-color: #aaa;
    border-radius: 5px
 }
 
@@ -313,7 +313,7 @@ main {
    width: 90%;
    height: auto;
    margin: 5px;
-   background: #fff;
+   background-color: #aaa;
    border-radius: 5px
 }
 
