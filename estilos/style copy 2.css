@@ -14,14 +14,11 @@
    
 } */
 :root {
-   --crobase:#C89D96;
-   --color0: #562031;
-   --color1: #FBC2AA;
-   --color2: #ADA1A1;
-   --color3: #1A1D29;
-   --color4: #1a1d29ef;
-   --color5: #562031a1;
-   --color6: #fbc2aa45;
+   --color0: #6C98B8;
+   --color1: #195885;
+   --color2: #3F596B;
+   --color3: #8298A8;
+   --color4: #273742;
 
    --fonteh1:  'Chakra Petch', sans-serif;
    --fontep: 'Open Sans Condensed', sans-serif;
@@ -38,30 +35,30 @@ img {
    width: 100%;
 }
 body {
-   background-color: var(--color6);   
+   background-color: var(--color);   
   
 }
 
 header {
-   background-image:linear-gradient(to right, var(--color3), var(--color4));
-
+  background: var(--color);
 }
 
 header h1  {
    font-size:  clamp(3.3em, 3vw, 5em);
-   font-family: var(--fonteh1);
+   font-family: var(--fonte3);
    font-style: italic;
    text-align: left;
-   color: var(--color2);
-   padding: 4% 1% 0.5% 7%;
-   text-shadow:  1px 1px 8px rgb(0 0 0 / 44%);
+   color: var(--color4);
+   padding: 0% 1% 0.5% 7%;
+   text-shadow:  0px 1px 2px rgb(0 0 0 / 44%);
 }
 
 
 header > p {
-   color: var(--color2);
+   color: var(--color4);
    font-size: clamp(1.6em, 3vw, 2em);
    font-family: var(--fonte3);
+   font-style: italic;
    text-align: left;
    padding: 1px 0px 15px 7%;
 }
@@ -74,12 +71,12 @@ nav ul {
 
 nav ul li {
    display: inline-block;
-   line-height: 5.5em;
+   line-height: 3.8em;
 }
 
 nav ul li a {
-   color: var(--color2);
-   font-size: 1.2em;
+   color: var(--color4);
+   font-size: 1em;
    font-family: var(--fontep);
    padding: 4px 8px;
    border-radius: .25em;
@@ -92,7 +89,7 @@ nav a:hover {
 }
 
 .checkbtn {
-   font-size: 2.2em;
+   font-size: 1.8em;
    color: var(--color2);
    float: right;
    line-height: 80px;
@@ -100,6 +97,7 @@ nav a:hover {
    cursor: pointer;
    display: none;
 }
+
 #check {
    display: none;
 }
@@ -116,13 +114,20 @@ nav a:hover {
  @media (max-width: 900px) {
       .checkbtn {
          display: block;
+         margin: 25px 48px;
+         
+      }   
+      .fa-bars {
+         position: fixed;
+         float: right;
+      
       }
       .nav-ul {
          position: fixed;
          width: 100%;
          height: 100vh;
          background-color: var(--color3);
-         top: 80px;
+         top: 68px;
          left: -100%;
          text-align: center;
          transition: .5s;
@@ -179,44 +184,92 @@ background-color: var(--color0);
 main {
    background-color: white;
    min-width: none;
-   max-width: 99%;
+   max-width: 800px;
    margin: auto;
-   box-shadow: 2px 2px 17px 1px rgb(0 0 0 / 18%);
+   /*box-shadow: 2px 2px 17px 1px rgb(0 0 0 / 18%);*/
    text-shadow:2px 2px 4px rgb(0 0 0 / 24%);
 
 }
 
 .textcentermain {
-   font-family: var(--fonte4);
-   font-size: clamp(1.8em, 4vw, 3em);
+   font-family: var(--fonte3);
+   font-size: 1.5em;
+   font-weight: normal;
    text-align: center;
    margin: auto;
    padding-top: 2%;
 }
- /* 
-   width: 100%;
-   height: 70px;
-   display: flex;
-   align-items: center;
-   background: #333;
-   padding: 0px;
-   text-align: center;
-   */
 
 
 .sec-1 {
    display: flex;
-   width: 82%;
+   width: 100%;
    height: 250px;
-   margin: auto;
+   margin-top: 50px;
+   margin-left: auto;
+   margin-right: auto;
    align-items: center;
 }
 
 .s1-boxs1 {
    display: block;
    width: 200px;
+   height: 100%;
    margin: 10px;
-   background: #aaa;
+   background: var(--color0);
+   border-radius: 5px
+}
+
+.s1-boxs2 {
+   width: auto;
+   margin: 20px;
+   align-items: center;
+   text-align: cente;
+}
+.s1-boxs2 i {
+   width: 100%;
+   align-items: center;
+   text-align: center;
+   font-size: 41px;
+}
+
+.s1-boxs1 p {
+   text-align: center;
+   width: 100%;
+   height: 90px;
+   margin-top: 25px;
+   font-size: 1.05em;
+   font-family: var(--fontep);
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 840px) {
+   .sec-1 {
+      display: inline-table;
+      width: 100%;
+      height: 250px;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      text-align: center;
+
+  }
+.s1-boxs1 {
+   display: inline-table;
+   width: 200px;
+   height: ;
+   margin: 10px;
+   background-color: #aaa;
    border-radius: 5px
 }
 
@@ -239,34 +292,27 @@ main {
    height: 90px;
    margin-top: 25px;
    font-size: 16px;
+   font-family: var(--fontep);
+}
 }
 
-/* CORES DOS ICONES*/
-.fa-whatsapp{
-   color: #48C857;
-}
-
-
-
-
-
-
-
-
-@media (max-width : 720px) {
+@media (max-width : 400px) {
    .sec-1 {
       display: inline-table;
       width: 100%;
       height: 250px;
-      margin: auto;
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
       align-items: center;
       text-align: center;
   }
 .s1-boxs1 {
    display: inline-table;
-   width: 200px;
-   margin: 10px;
-   background: #aaa;
+   width: 90%;
+   height: auto;
+   margin: 5px;
+   background-color: #aaa;
    border-radius: 5px
 }
 
@@ -289,12 +335,18 @@ main {
    height: 90px;
    margin-top: 25px;
    font-size: 16px;
+   font-family: var(--fontep);
 }
 }
+
+
+
+
 
 .m-art1 {
    text-align: center;
    width: 99%;
+   margin-top: 100px;
    margin-left: auto;
    margin-right: auto;
    border-radius:0.5%;
@@ -346,58 +398,66 @@ main {
    line-height: 1.3em;
 }
 
-.sect-3 {
-   margin-left: auto;
-   margin-right: auto;   
-   padding: 0px 0% 6% 0%;
-   margin-bottom: 0%;
-   width: 98.8%;
-   border: black;
-   box-shadow: 0px 0px 1px black;
-}
-.sect-sect-3-tex h2 {
-   font-size: clamp(2em, 4vw, 3em);
-   font-family:var(--fonte4);
-   text-align: center;
-   padding-top: 5%;
-   padding-left: 1%;
-   padding-bottom: 6px;
-}
-.sect-sect-3-tex p {
-   text-align: justify;
-   font-family: var(--fontep);
-   padding: 0% 3% 1% 3%;
-   text-indent: 2em;  
-   font-size: clamp(1.4em, 2vw, 2em);
-   line-height: 1.3em;  
-}
-.sect-4 {
-   margin-left: auto;
-   margin-right: auto;   
-   padding: 0px 0% 6% 0%;
-   margin-bottom: 0%;
-   width: 98.8%;
-   border: black;
-   box-shadow: 0px 0px 1px black;
-}
 
-.sect-sect-4-tex h2 {
-   font-size: clamp(2em, 4vw, 3em);
-   font-family:var(--fonte4);
-   text-align: center;
-   padding-top: 5%;
-   padding-left: 1%;
-   padding-bottom: 6px;
-}
 
-.sect-sect-4-tex p{
-   text-align: justify;
-   font-family: var(--fontep);
-   padding: 0% 3% 1% 3%;
-   text-indent: 2em;  
-   font-size: clamp(1.4em, 2vw, 2em); 
-   line-height: 1.3em;
 
+
+
+@media (max-width: 800px ) {
+   .sect-2 { 
+      margin-left: auto;
+      margin-right: auto;   
+      padding: 0px 0% 6% 0%;
+      margin-bottom: 0%;
+      width: 98.8%;
+      border: black;
+      box-shadow: 0px 0px 1px black;
+   }
+   
+   .sect-sect-2-tex h2 {
+      font-size: clamp(2em, 4vw, 3em);
+      font-family: var(--fonte3);
+      text-align: center;
+      padding-top: 5%;
+      padding-left: 1%;
+      padding-bottom: 6px;
+   }
+   
+   .sect-sect-2-tex p {
+      text-align: justify;
+      font-family: var(--fontep);
+      padding: 0% 3% 1% 3%;
+      text-indent: 2em;  
+      font-size: clamp(1.4em, 2vw, 2em);
+      line-height: 1.3em;
+   } 
+   .m-art1 {
+      text-align: center;
+      width: 99%;
+      margin-top: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius:0.5%;
+      border-radius: 0.5em;
+   }
+   
+   .sect-2 a {
+      font-family: var(--fonteh1);
+      font-size: clamp(1.6em, 4vw, 4em);
+      text-decoration: none;
+      background-color: var(--color2);
+      padding: 1px 2px;
+      border-radius: 8px;
+      color: var(--color0);
+   }
+   .sect-2 a:hover {
+      box-shadow: 2px 2px 3px  rgb(0 0 0 / 100%);
+   
+   }
+   .sect-2 img {
+      padding-bottom: 5%;
+      width: 90%;   
+   }
 }
 
 aside {
@@ -411,13 +471,16 @@ aside {
 .as-d1 {
    display: block;
    font-style: var(--fonte3);
-   padding: 1px 1% 1px 1%;
+   font-family: var(--fonte4);
    font-size: clamp(1.5em, 3vw, 2em); 
    text-align: center;
+   padding: 1px 1% 1px 1%;
+
 }
 .as-d2 {
    display: block;
    font-size: clamp(2em, 4vw, 3em);
+   font-family: var(--fonte);
    margin: 1% 1%;
    text-align: center;
 }
@@ -453,12 +516,24 @@ footer .boxs:nth-child(4) {
 .boxs h2 {
    color: white; 
    margin-bottom: 20px;  
+   font-family: var(--fonteh1);
+   font-size: 1.6em;
+   font-weight: lighter;
+}
+
+.boxs h3 {
+   color: white; 
+   margin-bottom: ;  
+   font-family: var(--fonteh1);
+   font-size: 1em;
+   font-weight: lighter;
 }
 
 .boxs ul li {
    margin: 10px 0px;
    list-style: none;
    font-size: 1.1em;
+   font-family: var(--fonte4);
 }
 
 .boxs ul li a {
@@ -470,9 +545,11 @@ footer .boxs:nth-child(4) {
    color: #fff;
 }
 .boxs p {
-   color: #fff;
+   color: #ddd;  
    text-align: justify;
    font-size: 1.1em;
+   font-family: var(--fonte4);
+   text-align: center;
 }
 
 .footer {
