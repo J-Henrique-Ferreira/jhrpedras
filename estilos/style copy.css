@@ -298,6 +298,7 @@ main {
       margin-right: auto;
       align-items: center;
       text-align: center;
+      background-color: #aaa;
   }
 .s1-boxs1 {
    display: inline-table;
