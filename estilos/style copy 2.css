@@ -195,6 +195,14 @@ main {
    padding-top: 2%;
 }
 
+.textcentermain2 {
+   font-family: var(--fonte3);
+   font-size: 1.5em;
+   font-weight: normal;
+   text-align: center;
+   margin: 20px 0px 0px 0px;
+   padding-top: 2%;
+}
 
 .sec-1 {
    display: flex;
@@ -207,7 +215,7 @@ main {
 .s1-boxs1 {
    display: block;
    width: 200px;
-   height: 200px;
+   height: px;
    margin: 5px;
    background: var(--color3);
    border-radius: 5px
@@ -289,6 +297,9 @@ main {
 }
 }
 
+
+
+/*
 @media (max-width : 500px) {
    header h1  {
       font-size:  ;
@@ -347,7 +358,7 @@ main {
    font-size: 16px;
    font-family: var(--fontep);
 }
-}
+} */
 
 
 
