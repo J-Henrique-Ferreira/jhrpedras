@@ -383,8 +383,7 @@ main {
 .sect-sect-2-tex h2 {
    font-size: clamp(2em, 4vw, 3em);
    font-family: var(--fonte3);
-   text-align: justify;
-   text-indent: 2em;
+   text-align: center;
    padding-left: 1%;
    padding-bottom: 6px;
 }
