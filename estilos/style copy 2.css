@@ -52,7 +52,7 @@ header h1  {
    text-align: left;
    color: #ccc;
    padding: 0% 1% 0.5% 7%;
-   text-shadow:  0px 1px 2px rgb(0 0 0 / 44%);
+   text-shadow: 4.6px 0px 1px rgb(42 42 42 / 62%);
 }
 
 
@@ -79,8 +79,9 @@ header h1  {
    text-align: left;
    color: #ccc;
    padding: 0% 1% 0.5% 7%;
-   text-shadow:  0px 1px 2px rgb(0 0 0 / 44%);
-} }
+   text-shadow: 4.6px 0px 1px rgb(42 42 42 / 62%);
+} 
+}
 
 
 header > p {
@@ -124,6 +125,8 @@ nav a:hover {
    margin-right: 40px;
    cursor: pointer;
    display: none;
+   text-shadow: 1px 1px 1px rgba(42, 42, 42, 0.734);
+
 }
 
 #check {
@@ -142,8 +145,7 @@ nav a:hover {
  @media (max-width: 900px) {
       .checkbtn {
          display: block;
-         margin: 25px 48px;
-         
+         margin: 20px 48px;
       }   
       .fa-bars {
          position: fixed;
@@ -217,7 +219,7 @@ main {
    width: 200px;
    height: 200px;
    margin: 5px;
-   background: var(--color3);
+   background: var(--color1);
    border-radius: 5px
 }
 
@@ -225,13 +227,14 @@ main {
    width: auto;
    margin: 20px;
    align-items: center;
-   text-align: cente;
+   text-align: center;
 }
 .s1-boxs2 i {
    width: 100%;
    align-items: center;
    text-align: center;
    font-size: 41px;
+   color: #fdfdfd;
 }
 
 .s1-boxs1 p {
@@ -241,6 +244,7 @@ main {
    margin-top: 25px;
    font-size: 1.05em;
    font-family: var(--fontep);
+   color: #fdfdfd;
 
 }
 
@@ -270,7 +274,7 @@ main {
    width: 200px;
    height: 100%;
    margin: 5px;
-   background-color: var(--color3);
+   background-color: var(--color1);
    border-radius: 5px
 }
 
@@ -278,13 +282,14 @@ main {
    width: auto;
    margin: 20px;
    align-items: center;
-   text-align: cente;
+   text-align: center;
 }
 .s1-boxs2 i {
    width: 100%;
    align-items: center;
    text-align: center;
    font-size: 41px;
+   color: #fdfdfd;
 }
 
 .s1-boxs1 p {
@@ -294,6 +299,7 @@ main {
    margin-top: 25px;
    font-size: 16px;
    font-family: var(--fontep);
+   color: #fdfdfd;
 }
 }
 
@@ -306,15 +312,16 @@ main {
       font-weight: 600;
       font-family: var(--fonte3);
       font-style: italic;
-      text-align: left;
+      text-align: center;
       color: #ccc;
-      padding: 0% 1% 0.5% 7%;
-      text-shadow:  0px 1px 2px rgb(0 0 0 / 44%);
+      padding: 0% 2% 2% 0%;
+      text-shadow: 4px 0px 1px rgb(42 42 42 / 62%);
    }
    
    .checkbtn {
       display: block;
-      margin: 15px 48px 0px 0px;
+      position: fixed;
+      margin: 18px 48px 0px 20px;
   }
 
   .checkbtn i {
@@ -344,7 +351,7 @@ main {
    width: 80%;
    height: auto;
    margin: auto ;
-   background-color: var(--color3);
+   background-color: var(--color1);
    border-radius: 3px
 }
 
@@ -360,6 +367,7 @@ main {
    align-items: center;
    text-align: center;
    font-size: 50px;
+   color: #f2f2f2;
 }
 
 .s1-boxs1 p {
@@ -369,6 +377,7 @@ main {
    margin-top: 25px;
    font-size: 16px;
    font-family: var(--fontep);
+   color: #f2f2f2;
 }
 } 
 
