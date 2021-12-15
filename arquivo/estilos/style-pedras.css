@@ -5,14 +5,21 @@
 
 @import url('https://fonts.googleapis.com/css2? family = Barlow: ital, wght @ 1.100 & family = Abrir + Sans + Condensado: wght @ 300 & display = swap');
 
-/* :root {
-   --crobase:#C89D96;
-   --color0: #2B4450;
-   --color1: #497285;
-   --color2: #DFEBED;
-   --color3: #F78536;
-   
-} */
+
+* {
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+   list-style: none;
+}
+img {
+   width: 100%;
+}
+body {
+   background-color: var(--color6);   
+  
+}
+
 :root {
    --color0: #6C98B8;
    --color1: #195885;
@@ -37,22 +44,6 @@ img {
 body {
    background-color: var(--color);   
   
-}
-
-.btn-whatsapp {
-   position: fixed;
-   float: right;
-   margin: 90px 25px;
-   background: #46C756;
-   padding: 2px 2px 6px 2px;
-   border-radius: 10px;
-   box-shadow: 0px 0px 1px .5px black;
-}
-
-.btn-whatsapp a {
-   font-family: var(--fonte3);
-   font-size: 1.4em;
-   color: white;
 }
 
 header {
@@ -97,18 +88,7 @@ header h1  {
    padding: 0% 1% 0.5% 7%;
    text-shadow: 4.6px 0px 1px rgb(42 42 42 / 62%);
 } 
-}
-
-
-header > p {
-   color: var(--color4);
-   font-size: clamp(1.6em, 3vw, 2em);
-   font-family: var(--fonte3);
-   font-style: italic;
-   text-align: left;
-   padding: 1px 0px 15px 7%;
-}
-
+} 
 nav ul {
    float: right;
    margin-right: 20px;
@@ -141,8 +121,7 @@ nav a:hover {
    margin-right: 40px;
    cursor: pointer;
    display: none;
-   text-shadow: 1px 1px 1px rgba(42, 42, 42, 0.734);
-
+   text-shadow: 1px 1px 1px rgb(42 42 42 / 73%);
 }
 
 #check {
@@ -162,6 +141,7 @@ nav a:hover {
       .checkbtn {
          display: block;
          margin: 20px 48px;
+         
       }   
       .fa-bars {
          position: fixed;
@@ -190,18 +170,11 @@ nav a:hover {
          left: 0;
       }
    }
-
-.img-capa {
-   border-radius: 0px ;
-}
-
 main {
-   background-color: white;
-   min-width: none;
-   margin: auto;
-   /*box-shadow: 2px 2px 17px 1px rgb(0 0 0 / 18%);*/
-   text-shadow: 1px 1px 1px rgb(0 0 0 / 24%);
-
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 24%);
 }
 
 .textcentermain {
@@ -209,120 +182,62 @@ main {
    font-size: 1.5em;
    font-weight: normal;
    text-align: center;
-   margin: 90px 0px 0px 0px;
+   margin: 80px 0px 30px 0px;
    padding-top: 2%;
 }
 
-.textcentermain2 {
-   font-family: var(--fonte3);
-   font-size: 1.5em;
-   font-weight: normal;
+.sect1 {
+   margin-left: auto;
+   margin-right: auto;   
+   padding: 0px 0% 6% 0%;
+   margin: auto;
+   width: 98%;
+   border: black;
+   box-shadow: 0px 0px 1px black;
+}
+.sect1-ar1 {
+   margin-top: 0px;
+}
+.sect1-ar1 h1 {
+   font-size: clamp(2em, 3vw, 3em);
+   font-family: var(--fonteh1);
+   font-weight: 100;
    text-align: center;
-   margin: 20px 0px 0px 0px;
-   padding-top: 2%;
+   padding-top: 3%;
+   padding-left: 1%;
+   padding-bottom: 2%;
+
 }
 
-.sec-1 {
-   display: flex;
-   width: 78%;
-   height: 250px;
-   margin: 40px auto 80px auto;
-   align-items: center;
-}
-
-.s1-boxs1 {
-   display: block;
-   width: 200px;
-   height: 200px;
-   margin: 5px;
-   background: var(--color1);
-   border-radius: 5px
-}
-
-.s1-boxs2 {
-   width: auto;
-   margin: 20px;
-   align-items: center;
-   text-align: center;
-}
-.s1-boxs2 i {
-   width: 100%;
-   align-items: center;
-   text-align: center;
-   font-size: 41px;
-   color: #fdfdfd;
-}
-
-.s1-boxs1 p {
-   text-align: center;
-   width: 100%;
-   height: 90px;
-   margin-top: 25px;
-   font-size: 1.05em;
+.sect1-ar1 h2 {
+   font-size: clamp(1.5em, 3vw, 2em);
    font-family: var(--fontep);
-   color: #fdfdfd;
+   font-weight: 400;
+   text-align: left;
+   padding-top: 1%;
+   padding-left: 1%;
+   padding-bottom: 0px;
 
 }
 
-
-
-
-
-
-
-
-
-
-@media (max-width : 840px) {
-   .sec-1 {
-      display: inline-table;
-      width: 100%;
-      height: 250px;
-      margin-top: 10px;
-      margin-left: auto;
-      margin-right: auto;
-      align-items: center;
-      text-align: center;
-
-  }
-.s1-boxs1 {
-   display: inline-table;
-   width: 200px;
-   height: 100%;
-   margin: 5px;
-   background-color: var(--color1);
-   border-radius: 5px
-}
-
-.s1-boxs2 {
-   width: auto;
-   margin: 20px;
-   align-items: center;
-   text-align: center;
-}
-.s1-boxs2 i {
-   width: 100%;
-   align-items: center;
-   text-align: center;
-   font-size: 41px;
-   color: #fdfdfd;
-}
-
-.s1-boxs1 p {
-   text-align: center;
-   width: 100%;
-   height: 90px;
-   margin-top: 25px;
-   font-size: 16px;
+.sect1-ar1 p {
+   font-size: clamp(1.2em, 3vw, 2em);
    font-family: var(--fontep);
-   color: #fdfdfd;
+   text-align: left;
+   padding-top: 1%;
+   padding-left: 1%;
+   padding-bottom: 6px;
 }
-}
 
 
 
 
-@media (max-width : 550px) {
+
+
+@media (max-width: 550px) {
+   header {
+      position: relative;
+   }
    header h1  {
       font-size: 2.5em;
       font-weight: 500;
@@ -344,235 +259,34 @@ main {
      font-size: 0.8em;
      font-weight: lighter;
   }
+  .nav-ul {
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+   background-color: var(--color2);
+   top: auto;
+   margin-top: 55px;
+   left: -100%;
+   text-align: center;
+   transition: .5s;
+}
    .textcentermain {
       font-family: var(--fonte3);
       font-size: 1.5em;
       font-weight: normal;
       text-align: center;
-      margin: 1px 0px 0px 0px;
-      padding-top: 2%;
-   }
-
-   .nav-ul {
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background-color: var(--color2);
-      top: auto;
-      margin-top: 55px;
-      left: -100%;
-      text-align: center;
-      transition: .5s;
-  }
-   .sec-1 {
-      display: inline-table;
-      width: 100%;
-      height: auto;
-      margin-top: 40px;
-      margin-left: auto;
-      margin-right: auto;
-      align-items: center;
-      text-align: center;
-  }
-.s1-boxs1 {
-   display: block;
-   width: 80%;
-   height: auto;
-   margin: auto ;
-   background-color: var(--color1);
-   border-radius: 3px
+      margin: 15px 0px 30px 0px;
+      padding-top: 0%;
+   };
 }
-
-.s1-boxs2 {
-   width: auto;
-   margin: 20px;
-   align-items: center;
-   text-align: center;
-}
-.s1-boxs2 i {
-   width: 100%;
-   margin-top: 20px;
-   align-items: center;
-   text-align: center;
-   font-size: 50px;
-   color: #f2f2f2;
-}
-
-.s1-boxs1 p {
-   text-align: center;
-   width: 100%;
-   height: 90px;
-   margin-top: 25px;
-   font-size: 16px;
-   font-family: var(--fontep);
-   color: #f2f2f2;
-}
-} 
-
-
-
-
-
-
-
-
-
-
- /* estilo a segunda sessão do main  PC*/ 
- .m-art1 {
-    margin-top: 0px;
-   margin-left: auto;
-   margin-right: auto;   
-   padding: 0px 0% 6% 0%;
-   width: 98%;
-   box-shadow: 0px 0px 1px black;
- }
-
-.sect-2 { 
-   display: flex;
-   align-items: center;
-   text-align: center;
-   
-}
-
-.sect-sect-2-tex {
-   width: 500px;
-   display: block;
-
-}
-.sect-sect-2-tex h2 {
-   font-size: clamp(2em, 4vw, 3em);
-   font-family: var(--fonte3);
-   text-align: center;
-   padding-left: 1%;
-   padding-bottom: 6px;
-}
-
-.sect-2-txt-p {
-   text-align: justify;
-   font-family: var(--fontep);
-   padding: 0% 3% 1% 9%;
-   margin-bottom: 20px;
-   text-indent: 2em;  
-   font-size: clamp(1.4em, 2vw, 2em);
-   line-height: 1.3em;
-}
-
-
-.m-art1 a {
-   display: inline-block;
-   font-family: var(--fontep);
-   text-decoration: none;
-   background-color: var(--color1);
-   padding: 1px 1px;
-   border-radius: 4px;
-   color: #ccc;
-   font-size: clamp(1.4em, 2vw, 4em);
-   box-shadow: 0px 0px 3px 1px black;
-
-}
-
-.m-art1 a:hover {
-color: white;}
-
-.btn-saiba {
-   width: 50%;
-   display: block;
-   text-align: left;
-   margin-left: 20%;
-   margin-top: 20px;
-}
-
-.sect-2 img {
-   width: 40%;
-   margin: 50px 10px 30px 50px;
-   border-radius: 3px;
-}
-
-/* MAIN PARA DISPOSITOVOS MÓVEIS*/
-@media (max-width: 830px) {
-   .m-art1 {
-      text-align: center;
-      margin-top: 0px;
-      margin-left: auto;
-      margin-right: auto;   
-      width: 98%;
-      box-shadow: 0px 0px 1px black;
-   }
-  
-  .sect-2 { 
-     display: block;
-     align-items: center;
-     text-align: center;
-     
-  }
-  
-  .sect-sect-2-tex {
-     width: 100%;
-     display: block;
-     text-align: center;
-  
-  }
-  .sect-sect-2-tex h2 {
-     font-size: clamp(2em, 4vw, 3em);
-     font-family: var(--fonte3);
-     text-align: center;
-     padding-top: 10px;
-     padding-bottom: 6px;
-  }
-  
-  .sect-2-txt-p {
-     text-align: justify;
-     font-family: var(--fontep);
-     margin: auto 5px ;
-     padding: 0px;
-     text-indent: 0px;
-     margin-bottom: 20px;
-     font-size: clamp(1.4em, 2vw, 2em);
-     line-height: 1.3em;
-  }
-  
-  
-  .m-art1 a {
-     display: inline-block;
-     font-family: var(--fontep);
-     text-decoration: none;
-     background-color: var(--color1);
-     padding: 1px 1px;
-     border-radius: 4px;
-     color: #ccc;
-     font-size: clamp(1.4em, 2vw, 4em);
-     box-shadow: 0px 0px 3px 1px black;
-  
-  }
-  
-  .m-art1 a:hover {
-  color: white;}
-  
-  .btn-saiba {
-     width: 100%;
-     text-align: center;
-     margin: 20px 0px;
-  }
-  
-  .sect-2 img {
-     width: 98%;
-     border-radius: 3px;
-     margin: 0px;
-  }
-}
-
-
-/*aside*/
 
 aside {
    background-image: linear-gradient(to top, var(--color2), var(--color4));
 }
 .as-sect-3 {
    display: flex;
-   background-color: ;
    width: 100%;
-   margin:  20px 0px 0px 0px;
+   margin: 20px 0px 0px 0px;
    margin-left: auto;
    margin-right: auto;
 }
@@ -581,7 +295,6 @@ aside {
 .as-d1 {
    display: block;
    width: 50%;
-   background-image: ;
    margin: 5px 0px 0px 30px;
 }
 .as-d2 {
@@ -620,24 +333,25 @@ aside {
 .as-sect-4 {
    display: flex;
    align-items: center;
-
-   /*background-image: linear-gradient(to right, var(--color3), var(--color4));
-   background-image: linear-gradient(to bottom, #ccc, var(--color3), var(--color4));*/
-
 }
 
 .as-d4 {
    display: block;
-   width: 40%;
-   background-image: ;
+   width: 100%;
    margin: 0px 20px;
    text-align: center;
 }
+
 
 .as-d4 img{
    width: auto;
    max-width: 145px;
    margin-top: 0px;
+   padding: 0px;
+  
+}
+.as-d4 img:hover {
+   cursor: pointer;
 }
 
 
@@ -656,7 +370,6 @@ aside {
    .as-d1 {
       display: block;
       width: 100%;
-      background-image: ;
       margin: 2px;
       text-align: center;
    }
@@ -679,14 +392,11 @@ aside {
    
    .as-sect-4 {
       display: block;
-     
-   
    }
    
    .as-d4 {
       display: block;
       width: 100%;
-      background-image: ;
       margin: 0px;
       text-align: center;
    }
@@ -704,11 +414,10 @@ aside {
       margin-top: 0px;
       line-height: 1.2em;
    }
-   
+
    .as-d4 img{
       width: 15%;
       margin: 20px 0px 20px 0px;
-
    }
 }
 
@@ -773,11 +482,6 @@ footer .boxs:nth-child(4) {
    width: 70%;
    
 }
-
-
-
-
-
 
 .footer {
    width: 100%;

@@ -39,22 +39,6 @@ body {
   
 }
 
-.btn-whatsapp {
-   position: fixed;
-   float: right;
-   margin: 90px 25px;
-   background: #46C756;
-   padding: 2px 2px 6px 2px;
-   border-radius: 10px;
-   box-shadow: 0px 0px 1px .5px black;
-}
-
-.btn-whatsapp a {
-   font-family: var(--fonte3);
-   font-size: 1.4em;
-   color: white;
-}
-
 header {
   background: var(--color1);
   position: fixed;
