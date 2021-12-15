@@ -351,7 +351,7 @@ main {
       font-family: var(--fonte3);
       font-size: 1.5em;
       font-weight: normal;
-      text-align: center;
+      text-align: justify;
       margin: 1px 0px 0px 100px;
       padding-top: 2%;
    }
