@@ -46,45 +46,7 @@ body {
   
 }
 
-.btn-whatsapp {
-   position: ;
-   float: right;
-   width: 76px;
-   margin: 90px 25px 0px 0px;
-}
 
-.btn-whatsapp a {
-   position: fixed;
-   text-align: ;
-   padding: 2px;
-   border-radius: 10px;
-   font-family: var(--fonte3);
-   font-size: 1.4em;
-   box-shadow: 0px 0px 1px .5px rgba(0, 0, 0, 0.721);
-   background: #46C756;
-   color: white;
-}
-
-@media(max-width:550px) {
-   .btn-whatsapp {
-      position: ;
-      float: right;
-      width: 76px;
-      margin: 30px 25px 0px 0px;
-   }
-   
-   .btn-whatsapp a {
-      position: fixed;
-      text-align: ;
-      padding: 2px;
-      border-radius: 10px;
-      font-family: var(--fonte3);
-      font-size: 1.4em;
-      box-shadow: 0px 0px 1px .5px rgba(0, 0, 0, 0.721);
-      background: #46C756;
-      color: white;
-   }
-}
 
 header {
   background: var(--color1);

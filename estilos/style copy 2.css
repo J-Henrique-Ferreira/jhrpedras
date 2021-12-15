@@ -550,12 +550,17 @@ color: white;}
      border-radius: 4px;
      color: #ccc;
      font-size: clamp(1.4em, 2vw, 4em);
-     box-shadow: 0px 0px 3px 1px black;
-  
+     box-shadow: 0px 0px 1px 0.5px rgba(0, 0, 0, 0.809)  
   }
   
   .m-art1 a:hover {
-  color: white;}
+   color: white;
+  }
+  .btn-saiba {
+   width: 100%;
+   text-align: center;
+   margin: 20px 0px;
+}
   
   #btn-whatsapp {
      width: 100%;
@@ -570,28 +575,17 @@ color: white;}
    background-color: var(--color1);
    padding: 1px 1px;
    border-radius: 4px;
-   color: #ccc;
    font-size: clamp(1.4em, 2vw, 4em);
    box-shadow: 0px 0px 1px .5px rgba(0, 0, 0, 0.721);
    background: #46C756;
-   color: white;
-
+  color: white;
 }
 
-.m-art1 a:hover {
-color: white;}
-
-.btn-saiba {
-   width: 100%;
-   text-align: center;
-   margin: 20px 0px;
+.sect-2 img {
+   width: 98%;
+   border-radius: 3px;
+   margin: 0px;
 }
-  
-  .sect-2 img {
-     width: 98%;
-     border-radius: 3px;
-     margin: 0px;
-  }
 }
 
 
